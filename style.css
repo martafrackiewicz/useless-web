@@ -1,5 +1,5 @@
 html, body {
-  background-color: #FCB283;
+  background-color: #FDD0B4;
 }
 
 .top {
@@ -16,4 +16,13 @@ html, body {
   position: absolute;
   top: calc(50% - 250px);
   left: calc(50% - 250px);
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
